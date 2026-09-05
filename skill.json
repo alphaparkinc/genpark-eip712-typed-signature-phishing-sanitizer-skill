@@ -1,0 +1,36 @@
+{
+  "name": "genpark-eip712-typed-signature-phishing-sanitizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - EIP-712 permit typed data signature parser detecting phishing attacks, unconstrained approvals, and unauthorized delegations.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "crypto",
+  "tags": [
+    "eip-712",
+    "phishing-defense",
+    "crypto-security",
+    "permit2",
+    "signature-audit"
+  ],
+  "inputs": {
+    "verifying_contract": {
+      "type": "string"
+    },
+    "spender_address": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "permit_scan_id": {
+      "type": "string"
+    },
+    "is_phishing_risk": {
+      "type": "boolean"
+    },
+    "signature_safety_grade": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
